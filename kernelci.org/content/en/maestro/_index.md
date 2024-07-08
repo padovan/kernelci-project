@@ -1,20 +1,20 @@
 ---
-title: "API & Pipeline"
+title: "Maestro"
 date: 2024-05-29
-description: "KernelCI API and Pipeline"
+description: "Maestro API and Pipeline"
 weight: 2
 ---
 
 ## API Overview
 
-The KernelCI API is a server-side service which provides two main features: a
+The Maestro API is a server-side service which provides two main features: a
 database abstraction and a publisher / subscriber interface.  Another important
 concept is the fact that users own the data they send to the API.  Let's have a
 quick look at how this all fits together.
 
 ### Database Abstraction
 
-All the data managed by KernelCI is stored in a MongoDB database using node
+All the data managed by Maestro is stored in a MongoDB database using node
 objects.  These can contain data about any part of the testing hierarchy such
 as a kernel revision, a build, static test results, runtime functional tests,
 regressions etc.  Each node has a parent so they form a simple tree.  There is
@@ -91,7 +91,7 @@ GitHub merged together on a test integration branch.
 ### Early Access
 
 In preparation for a full production roll-out, an [Early
-Access](/docs/api_pipeline/api/early-access) instance has been deployed in the Cloud (AKS)
+Access](api/early-access) instance has been deployed in the Cloud (AKS)
 on `kernelci-api.westus3.cloudapp.azure.com`.  This is stable enough to let
 users give it a try as some form of beta-testing and is used as a candidate
 solution for an initial production deployment in the coming months.  Like
