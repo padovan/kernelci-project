@@ -19,3 +19,4 @@ Please provide the required information below and also replace `USER` with your 
 
 * User name:
 * Email address:
+* Reason:
